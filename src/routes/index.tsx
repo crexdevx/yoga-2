@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 import communityYogaImg from "@/assets/community-yoga-class.webp";
-import whyYogaImg from "@/assets/why-yoga-benefits-new.png.asset.json";
+import whyYogaImg from "@/assets/why-yoga-benefits.webp";
 import heroPosterImg from "@/assets/yoga-hero-poster.webp";
 import courseYogaPranayama from "@/assets/course-yoga-pranayama.webp";
 import courseYogaEducation from "@/assets/course-yoga-education.webp";
@@ -204,7 +204,7 @@ export function Index() {
     <main className="bg-about-canvas">
       <section
         aria-label="North East Yoga and Meditation Centre"
-        className="relative aspect-[9/16] max-h-[100svh] w-full overflow-hidden bg-about-canvas sm:aspect-[16/9]"
+        className="relative aspect-[9/16] max-h-[100svh] w-full overflow-hidden bg-about-canvas sm:aspect-auto sm:h-[100svh] sm:max-h-none"
       >
         <video
           ref={heroVideoRef}
@@ -339,7 +339,7 @@ export function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 lg:order-1">
             <img
-              src={whyYogaImg.url}
+              src={whyYogaImg}
               alt="Illustration of yoga benefits: strength, flexibility, immunity, calm mind, focus, and better sleep"
               className="mx-auto w-full max-w-lg"
               width={1200}
